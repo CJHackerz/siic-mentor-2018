@@ -1,159 +1,113 @@
 <?php
   include '../_include/header.php';
 ?>
-  <link rel="stylesheet" href="../assets/css/signup.css">
+
+<link rel="stylesheet" href="../assets/css/signup.css">
+
 <!-- Body -->
   <div class="container">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h2>Checkout form</h2>
-      <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      <h2>SIIC Mentorship Register</h2>
+      <p class="lead"></p>
     </div>
 
     <div class="row">
-      <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">Billing address</h4>
+      <div class="col-md-8">
+        <h4 class="mb-3">Personal Details</h4>
         <form class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="firstName">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="mentor_name" placeholder="" value="" required>
               <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
+                Valid name is required
               </div>
             </div>
           </div>
 
           <div class="mb-3">
-            <label for="username">Username</label>
+            <label for="email">Email</label>
             <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="email" name="mentor_email" required>
+              <div class="input-group-append">
+                <span class="input-group-text">@ktr.srmuniv.ac.in</span>
               </div>
-              <input type="text" class="form-control" id="username" placeholder="Username" required>
               <div class="invalid-feedback" style="width: 100%;">
-                Your username is required.
+                Valid email is required
               </div>
             </div>
           </div>
 
           <div class="mb-3">
-            <label for="email">Email <span class="text-muted">(Optional)</span></label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <label for="reg_id">Employee ID/ Registration Number</label>
+            <input type="text" class="form-control" id="reg_id" name="mentor_reg_id" required>
             <div class="invalid-feedback">
-              Please enter a valid email address for shipping updates.
+              Please enter your Employee ID/ Registration Number
             </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-            <div class="invalid-feedback">
-              Please enter your shipping address.
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
           </div>
 
           <div class="row">
             <div class="col-md-5 mb-3">
-              <label for="country">Country</label>
-              <select class="custom-select d-block w-100" id="country" required>
+              <label for="dept">Department</label>
+              <select class="custom-select d-block w-100" id="dept" name="mentor_dept" required>
                 <option value="">Choose...</option>
-                <option>United States</option>
+                <option value="School of Civil Engineering">School of Civil Engineering</option>
+                <option value="School of Architecture and Interior Design">School of Architecture and Interior Design</option>
+                <option value="School of Mechanical Engineering">School of Mechanical Engineering</option>
+                <option value="School of Chemical and Material Technology">School of Chemical and Material Technology</option>
+                <option value="School of Electrical and Electronics Engineering">School of Electrical and Electronics Engineering</option>
+                <option value="School of Bio - Engineering">School of Bio - Engineering</option>
+                <option value="School of Computing">School of Computing</option>
+                <option value="School of Basic Sciences">School of Basic Sciences</option>
+                <option value="School of Languages">School of Languages</option>
+                <option value="Center for TQM">Center for TQM</option>
+                <option value="Center for Nanotechnology">Center for Nanotechnology</option>
+                <option value="Career Development Center">Career Development Center</option>
+                <option value="others">Others</option>
               </select>
               <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="state">State</label>
-              <select class="custom-select d-block w-100" id="state" required>
-                <option value="">Choose...</option>
-                <option>California</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="zip">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                Zip code required.
+                Please select a valid School/Department
               </div>
             </div>
           </div>
-          <hr class="mb-4">
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="same-address">
-            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+
+          <div class="mb-3">
+            <label for="desig">Designation</label>
+            <input type="text" class="form-control" id="desig" name="mentor_desig" required>
+            <div class="invalid-feedback">
+              Please enter your Designation
+            </div>
           </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="save-info">
-            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+
+          <div class="mb-3">
+            <label for="qual">Highes Qualifications</label>
+            <input type="text" class="form-control" id="qual" name="mentor_qualifications" required>
+            <div class="invalid-feedback">
+              Please enter your Qualifications
+            </div>
           </div>
+
+          <div class="mb-3">
+            <label for="exp">Total Years of Experience</label>
+            <input type="text" class="form-control" id="exp" name="mentor_experience" required>
+            <div class="invalid-feedback">
+              Please enter your Experience
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="contact">Contact Number</label>
+            <input type="text" class="form-control" id="contact" name="mentor_contact" required>
+            <div class="invalid-feedback">
+              Please enter your Contact Number
+            </div>
+          </div>
+
           <hr class="mb-4">
 
-          <h4 class="mb-3">Payment</h4>
+          <h4 class="mb-3">Professional Details</h4>
 
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-              <label class="custom-control-label" for="credit">Credit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-              <label class="custom-control-label" for="debit">Debit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-              <label class="custom-control-label" for="paypal">Paypal</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="cc-name">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="cc-number">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                Credit card number is required
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                Security code required
-              </div>
-            </div>
-          </div>
           <hr class="mb-4">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
         </form>
@@ -161,7 +115,27 @@
     </div>
   </div>
 <!-- Body ends -->
+<script>
+    (function() {
+      'use strict';
 
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>
 <?php
   include '../_include/footer.php';
 ?>
