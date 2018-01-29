@@ -2,8 +2,8 @@
 
   // For dev
   $servername = "localhost";
-  $username = "root";
-  $password = "";
+  $username = "siic";
+  $password = "siic2017";
   $database = "siic";
   // Create connection
   $conn = new mysqli($servername, $username, $password, $database);

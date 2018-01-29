@@ -1,5 +1,6 @@
 <?php
   include '../_include/header.php';
+  echo phpinfo();
 ?>
 <link rel="stylesheet" href="../assets/css/login.css">
 <!-- Body -->
@@ -11,7 +12,7 @@
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    
+
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>

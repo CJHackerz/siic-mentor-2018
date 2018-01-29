@@ -7,7 +7,7 @@
 <!-- Body -->
   <div class="container">
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="d-block mx-auto mb-4" src="https://srmiic.com/siiclogo.jpg" alt="" width="72" height="72">
       <h2>SIIC Mentorship Register</h2>
       <p class="lead"></p>
     </div>
@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-8">
         <h4 class="mb-3">Personal Details</h4>
-        <form class="needs-validation" novalidate>
+        <form method="post" action="./process-signup.php" class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">Name</label>
@@ -173,7 +173,7 @@
           </div>
 
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to Signup</button>
         </form>
       </div>
     </div>
