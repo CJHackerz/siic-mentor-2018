@@ -43,8 +43,7 @@
       } else {
         $pass = uniqid();
         $sql = "INSERT INTO mentor(name, email, reg_no, dept, desig, qualifications, experience, contact, aoi, startup_exp, value_add, hours, spec_train, password) VALUES(
-          '$name', '$email', '$reg_id', '$dept', '$desig', '$qual', '$exp', '$contact', '$aot', '$startup', '$val_add', '$time', '$spec_train', '$pass');
-        )";
+          '$name', '$email', '$reg_id', '$dept', '$desig', '$qual', '$exp', '$contact', '$aot', '$startup', '$val_add', '$time', '$spec_train', '$pass')";
 
         if($conn->query($sql)) {
           echo "Registration successfull! Please check your email";

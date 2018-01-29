@@ -1,6 +1,5 @@
 <?php
   include '../_include/header.php';
-  echo phpinfo();
 ?>
 <link rel="stylesheet" href="../assets/css/login.css">
 <!-- Body -->
