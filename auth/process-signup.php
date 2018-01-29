@@ -56,7 +56,7 @@
             'html'    =>    '<p>Thank you for registering for SRM Innovation and Incubation Center Mentorship! Your password is :' . $pass .'. The mentor site is currently under construction. You will be notified once it is ready! Thanks again!'
           ));
         } else {
-          header('Location: ../_error/500.php');
+          header('Location: ../_error/500.php?sql_failed');
         }
       }
     } else {
