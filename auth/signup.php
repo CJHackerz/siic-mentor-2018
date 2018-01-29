@@ -8,7 +8,7 @@
   <div class="container">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="https://srmiic.com/siiclogo.jpg" alt="" width="72" height="72">
-      <h2>SIIC Mentorship Register</h2>
+      <h2>SIIC Mentorship Registeration</h2>
       <p class="lead"></p>
     </div>
 
@@ -81,7 +81,7 @@
           </div>
 
           <div class="mb-3">
-            <label for="qual">Highes Qualifications</label>
+            <label for="qual">Highest Qualifications</label>
             <input type="text" class="form-control" id="qual" name="mentor_qualifications" required>
             <div class="invalid-feedback">
               Please enter your Qualifications
