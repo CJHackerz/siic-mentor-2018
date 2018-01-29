@@ -22,7 +22,7 @@
         isset($_POST['mentor_spec_train'])
     ) {
       $name = $_POST['mentor_name'];
-      $email = $_POST['mentor_email'] . '@gmail.com';
+      $email = $_POST['mentor_email'] . '@ktr.srmuniv.ac.in';
       $reg_id = $_POST['mentor_reg_id'];
       $dept = $_POST['mentor_dept'];
       $desig = $_POST['mentor_desig'];
