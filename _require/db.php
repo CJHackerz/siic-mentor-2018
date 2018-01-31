@@ -2,8 +2,8 @@
 
   // For dev
   $servername = "localhost";
-  $username = "srmiiic";
-  $password = "srmiic@2017";
+  $username = "siic";
+  $password = "siic@2017";
   $database = "siic";
   // Create connection
   $conn = new mysqli($servername, $username, $password, $database);
