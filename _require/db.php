@@ -3,7 +3,7 @@
   // For dev
   $servername = "localhost";
   $username = "siic";
-  $password = "siic@2017";
+  $password = "siic2017";
   $database = "siic";
   // Create connection
   $conn = new mysqli($servername, $username, $password, $database);
