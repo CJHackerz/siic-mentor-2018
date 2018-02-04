@@ -39,7 +39,7 @@
       $result = $conn->query($sql);
 
       if($result->num_rows > 0) {
-        header('Location: ../signup.php?exists');
+        header('Location: ./signup.php?exists');
       } else {
         $pass = uniqid();
         $sql = "INSERT INTO mentor(name, email, reg_no, dept, desig, qualifications, experience, contact, aoi, startup_exp, value_add, hours, spec_train, password) VALUES(
@@ -59,9 +59,9 @@
         }
       }
     } else {
-      header('Location: ../signup.php?params_missing');
+      header('Location: ./signup.php?params_missing');
     }
   } else {
-    header('Location: ../signup.php');
+    header('Location: ./signup.php');
   }
 ?>
