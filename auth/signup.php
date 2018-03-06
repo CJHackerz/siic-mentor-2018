@@ -75,9 +75,11 @@
                 <option value="Department of Mathematics">Department of Mathematics</option>
                 <option value="Department of Physics">Department of Physics</option>
                 <option value="Department of Chemistry">Department of Chemistry</option>
-                <option value="School of Business and Management">School of Business and Management</option>
+                <option value="School of Business and Management">School of Management</option>
+                <option value="College of Science and Humanities">College of Science and Humanities</option>
+                <option value="Career Development Centre">Career Development Centre</option>
                 <option value="School of Law">School of Law</option>
-                <option value="College of Medicine">College of Medicine</option>
+                <option value="College of Medicine">College of Medicine, Dental and Health Science</option>
                 <option value="others">Others</option>
               </select>
               <div class="invalid-feedback">
