@@ -6,10 +6,13 @@
 
 <head>
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <!-- Body -->
 <?php
- $sql="SELECT * from mentor";
+ $sql="SELECT * from mentor WHERE email='$user_email'";
  $result =  $conn->query($sql);
  $row   =  $result->fetch_assoc();
  $reg   =  $row['reg_no'];
@@ -19,13 +22,25 @@
  $aoi   =  $row['aoi'];
  $exp   =  $row['experience'];
  $time  =  $row['hours'];
+ $prof  =  $row['profile_img']
 ?>
 
  <div style="background-color:#DCDCDC">
 
-
   <div align="center" style="display: block;float:left;margin:100px 0px 0px 150px">
-  <?php echo  '<img src="../public/imgs/'. $row['profile_img'].'" alt="No image" style="border-radius:50%;border:6px solid #696969; height:200px;width:200px;margin:auto "/> '?>
+  <?php
+  if($prof=="")
+{
+  ?>
+  <a href="edit_profile.php"><?php echo  '<img src="../public/imgs/default.PNG" alt="No image" style="border-radius:50%;border:6px solid #696969; height:200px;width:200px;margin:auto "/> '?></a>
+ <?php
+}
+else {
+  ?>
+  <a href="edit_profile.php"><?php echo  '<img src="../public/imgs/'. $row['profile_img'].'" alt="No image" style="border-radius:50%;border:6px solid #696969; height:200px;width:200px;margin:auto "/> '?></a>
+<?php
+}
+?>
     <br/>
     <div style="display:block;font-size:40px;margin:auto">
     <?php echo $user_name; ?>
@@ -39,10 +54,10 @@
   <div class="card" style="width: 47rem;margin-left:540px;">
     <center style="margin-top:-15px"><hr style="width: 100%; height: 5px; background-color:#0dba86;"></center>
     <div align="right">
-    <i class="fas fa-user" style="width:200px;overflow:hidden; border-radius:50%; height:40px;padding-right:20px"></i>
   </div>
   <div class="card" style="width: 42rem;margin:20px 0px 0px 20px">
   <div class="card-body">
+    <i class="fas fa-user" style="width:50px;overflow:hidden; border-radius:50%; height:40px;float:left"></i>
     <p style="font-size:30px">Hello, I am <strong><?php echo $user_name; ?></strong>
     </p>
     <p class="card-text">The mentor is from the department of <?php echo $dep ?>. The mentor provides a good opportunity for early-career researchers, especially those from <?php echo $aoi ?>. He himself
@@ -55,7 +70,7 @@
 <div class="card-body">
   <p style="font-size:30px">Personal Info
   </p>
-  <div class="progress" style="width:40%; height:25px; margin:10px; float:left" >
+  <div class="progress" style="width:40%; height:30px; margin:10px; float:left" >
     <div class="progress-bar" role="progressbar" style="width:30%;background-color:#0dba86">
       Name
     </div>
@@ -63,7 +78,7 @@
       <?php echo $user_name ?>
     </div>
   </div>
-  <div class="progress" style="width:40%; height:25px;margin:10px; float:left">
+  <div class="progress" style="width:40%; height:30px;margin:10px; float:left">
     <div class="progress-bar" role="progressbar" style="width:30%; background-color:#0dba86">
       Reg no
     </div>
@@ -71,7 +86,7 @@
       <?php echo $reg ?>
     </div>
   </div>
-  <div class="progress" style="width:40%; height:25px;margin:10px; float:left">
+  <div class="progress" style="width:40%; height:30px;margin:10px; float:left">
     <div class="progress-bar" role="progressbar" style="width:30%; background-color:#0dba86">
       Department
     </div>
@@ -79,7 +94,7 @@
       <?php echo $dep ?>
     </div>
   </div>
-  <div class="progress" style="width:40%; height:25px;margin:10px; float:left">
+  <div class="progress" style="width:40%; height:30px;margin:10px; float:left">
     <div class="progress-bar" role="progressbar" style="width:30%; background-color:#0dba86">
       Qualifications
     </div>
