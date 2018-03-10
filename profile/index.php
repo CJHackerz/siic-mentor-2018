@@ -61,7 +61,7 @@ else {
     <p style="font-size:30px">Hello, I am <strong><?php echo $user_name; ?></strong>
     </p>
     <p class="card-text">The mentor is from the department of <?php echo $dep ?>. The mentor provides a good opportunity for early-career researchers, especially those from <?php echo $aoi ?>. He himself
-          having interest in this field. He himself being a very enthusiastic and having <?php echo $exp ?> years of experience.He is also willing to devote <?php echo $time ?> hours per week. He is also an
+          having interest in this field. He himself being a very enthusiastic and having <?php echo $exp ?> years of experience. He is also willing to devote <?php echo $time ?> hours per week. He is also an
           excellent support for the whole team.
     </p>
   </div>

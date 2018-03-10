@@ -17,7 +17,7 @@
     <input type="file" accept=".jpeg, .jpg, .png" name="profile_img" id="profile_img"/>
   </div>
 
-  <input type="submit" value="Upload"/>
+  <input type="submit" value="Upload" style="background-color:#0dba86;color:white"/>
 </form>
 
 <!-- Body ends -->
