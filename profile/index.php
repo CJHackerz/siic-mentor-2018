@@ -33,7 +33,7 @@
   if($prof=="")
 {
   ?>
-  <a href="edit_profile.php"><?php echo  '<img src="../public/imgs/default.PNG" alt="No image" style="border-radius:50%;border:6px solid #696969; height:200px;width:200px;margin:auto "/> '?></a>
+  <a href="edit_profile.php"><?php echo  '<img src="../public/imgs/default.png" alt="No image" style="border-radius:50%;border:6px solid #696969; height:200px;width:200px;margin:auto "/> '?></a>
  <?php
 }
 else {
