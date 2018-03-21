@@ -1,5 +1,6 @@
 <?php
   include '../_include/header.php';
+  include '../_include/navbar.php';
   require '../_require/auth.php';
   require '../_require/db.php';
 ?>
@@ -22,7 +23,7 @@
  $aoi   =  $row['aoi'];
  $exp   =  $row['experience'];
  $time  =  $row['hours'];
- $prof  =  $row['profile_img']
+ $prof  =  $row['profile_img'];
 ?>
 
  <div style="background-color:#DCDCDC">
@@ -66,7 +67,7 @@ else {
     </p>
   </div>
 </div>
-<div class="card" style="width: 42rem;margin:20px 0px 0px 20px">
+<div class="card" style="width: 42rem;margin:20px 0px 20px 20px">
 <div class="card-body">
   <p style="font-size:30px">Personal Info
   </p>
