@@ -1,11 +1,13 @@
 <?php
   include '../_include/header.php';
-  include '../_include/navbar.php';
   require '../_require/auth.php';
   require '../_require/db.php';
 ?>
 
 <head>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/promise-polyfill@7.1.0/dist/promise.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +25,7 @@
  $aoi   =  $row['aoi'];
  $exp   =  $row['experience'];
  $time  =  $row['hours'];
- $prof  =  $row['profile_img'];
+ $prof  =  $row['profile_img']
 ?>
 
  <div style="background-color:#DCDCDC">
@@ -67,7 +69,7 @@ else {
     </p>
   </div>
 </div>
-<div class="card" style="width: 42rem;margin:20px 0px 20px 20px">
+<div class="card" style="width: 42rem;margin:20px 0px 0px 20px">
 <div class="card-body">
   <p style="font-size:30px">Personal Info
   </p>
