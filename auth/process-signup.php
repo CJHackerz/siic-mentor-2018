@@ -52,7 +52,7 @@
             'from'    =>    'SRMIIC NoReply <noreply@srmiic.com>',
             'to'      =>    'Hello User <' . $email . '>',
             'subject' =>    'Welcome to SRMIIC Mentor!',
-            'html'    =>    '<p>Thank you for registering for SRM Innovation and Incubation Center Mentorship! Your password is :' . $pass .'. The mentor site is currently under construction. You will be notified once it is ready! Thanks again!'
+            'html'    =>    '<p>Thank you for registering for SRM Innovation and Incubation Center Mentorship! .'
           ));
         } else {
           header('Location: ../_error/500.php?sql_failed');
