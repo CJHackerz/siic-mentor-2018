@@ -59,7 +59,7 @@
     new WOW().init();
 
     /*----------------------------------
-    COUNTUP JS ACTIVE 
+    COUNTUP JS ACTIVE
     ------------------------------------*/
     $('.counter').counterUp({
         delay: 10,
@@ -192,16 +192,6 @@
     /* ---------------------------------------------
         HEADER STICKY STYLE.
     --------------------------------------------- */
-<<<<<<< HEAD
-    // $(window).on('scroll', function() {
-    //     var wSize = $(window).width();
-    //     if (wSize > 1 && $(this).scrollTop() > 1) {
-    //         $('#sticky-header').addClass('sticky');
-    //     } else {
-    //         $('#sticky-header').removeClass('sticky');
-    //     }
-    // });
-=======
     $(window).on('scroll', function() {
         var wSize = $(window).width();
         if (wSize > 1 && $(this).scrollTop() > 1) {
@@ -210,7 +200,6 @@
             $('#sticky-header').removeClass('sticky');
         }
     });
->>>>>>> 85858caf11001fe2b565f1654e827f622b325137
 
     /* ---------------------------------------------
      MENU HAMBURGER AND FULL SCREEN  OVERLAY.
@@ -229,7 +218,7 @@
         open = false;
     });
     /* ---------------------------------------------
-    HOMEPAGE THREE SLIDER MAIN SECTION 
+    HOMEPAGE THREE SLIDER MAIN SECTION
     ------------------------------------------------*/
 
     $(".slider-wrapper").owlCarousel({
