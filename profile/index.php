@@ -30,7 +30,7 @@
 
  <div style="background-color:#DCDCDC">
 
-  <div align="center" style="display: block;float:left;margin:100px 0px 0px 150px">
+  <div align="center" style="display: block;float:left;margin:100px 0px 0px 80px">
   <?php
   if($prof=="")
 {
@@ -48,8 +48,18 @@ else {
     <div style="display:block;font-size:40px;margin:auto">
     <?php echo $user_name; ?>
   </div>
-  <center style="margin-top: -10px"><hr style="width: 50%; height: 5px; background-color:#0dba86;"></center>
+  <center style="margin-top: -10px"><hr style="width: 60%; height: 5px; background-color:#0dba86;"></center>
   <span style="color:#696969;font-size:20px">Mentor</span>
+  <form method="get" action="password-change.php">
+    <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px; float: left;border-radius:5px; color:#42f4d9">Change password</button>
+    </form>
+    <form method="get" action="changes.php">
+    <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px;float: left;margin-left:2px;border-radius:5px;color:#42f4d9" >Edit Profile</button>
+</form>
+<form method="get" action="#">
+    <button type="submit"  style=" background-color:#0dba86; height:30px;font-size:12px;float: left; margin-left:2px;border-radius:5px;color:#42f4d9">Join Team</button>
+</form>
+
 </div>
   <!-- <div style="float:left; margin-left:50px">
     <?php echo $user_name; ?>
