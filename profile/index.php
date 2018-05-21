@@ -27,7 +27,9 @@
  $time  =  $row['hours'];
  $prof  =  $row['profile_img']
 ?>
-
+<form method="get" action="logout.php">
+  <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px; float: right;border-radius:5px; margin-right: 20px;color:#42f4d9">Logout</button>
+</form>
  <div style="background-color:#DCDCDC">
 
   <div align="center" style="display: block;float:left;margin:100px 0px 0px 80px">
