@@ -58,7 +58,7 @@ else {
     <form method="get" action="changes.php">
     <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px;float: left;margin-left:2px;border-radius:5px;color:#42f4d9" >Edit Profile</button>
 </form>
-<form method="get" action="#">
+<form method="get" action="../../siic-2017-php/teams.php">
     <button type="submit"  style=" background-color:#0dba86; height:30px;font-size:12px;float: left; margin-left:2px;border-radius:5px;color:#42f4d9">Join Team</button>
 </form>
 
