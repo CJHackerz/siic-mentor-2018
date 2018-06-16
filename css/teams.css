@@ -1,0 +1,12 @@
+div.team_pic {
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.team_name {
+  padding: 10px;
+}
+div.team_pic:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}

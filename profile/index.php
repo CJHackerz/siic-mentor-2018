@@ -28,7 +28,7 @@
  $prof  =  $row['profile_img']
 ?>
 <form method="get" action="logout.php">
-  <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px; float: right;border-radius:5px; margin-right: 20px;color:#42f4d9">Logout</button>
+  <button type="submit" style=" background-color:#0dba86;color:#ffffff;  height:30px;font-size:12px; float: right;border-radius:5px; margin-right: 20px;">Logout</button>
 </form>
  <div style="background-color:#DCDCDC">
 
@@ -53,13 +53,13 @@ else {
   <center style="margin-top: -10px"><hr style="width: 60%; height: 5px; background-color:#0dba86;"></center>
   <span style="color:#696969;font-size:20px">Mentor</span>
   <form method="get" action="password-change.php">
-    <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px; float: left;border-radius:5px; color:#42f4d9">Change password</button>
+    <button type="submit" style=" background-color:#0dba86; color:#ffffff; height:30px;font-size:12px; float: left;border-radius:5px;">Change password</button>
     </form>
     <form method="get" action="changes.php">
-    <button type="submit" style=" background-color:#0dba86; height:30px;font-size:12px;float: left;margin-left:2px;border-radius:5px;color:#42f4d9" >Edit Profile</button>
+    <button type="submit" style=" background-color:#0dba86; color:#ffffff;  height:30px;font-size:12px;float: left;margin-left:2px;border-radius:5px;" >Edit Profile</button>
 </form>
-<form method="get" action="../../siic-2017-php/teams.php">
-    <button type="submit"  style=" background-color:#0dba86; height:30px;font-size:12px;float: left; margin-left:2px;border-radius:5px;color:#42f4d9">Join Team</button>
+<form method="get" action="../team/teams.php">
+    <button type="submit"  style=" background-color:#0dba86; color:#ffffff; height:30px;font-size:12px;float: left; margin-left:2px;border-radius:5px;">Join Team</button>
 </form>
 
 </div>

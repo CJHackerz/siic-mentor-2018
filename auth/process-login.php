@@ -14,6 +14,7 @@
       session_start();
       $_SESSION['email'] = $email;
       $_SESSION['user_name'] = $row['name'];
+      $_SESSION['regno'] = $row['reg_no'];
       header('Location: ../profile/');
     } else {
       // User does not exist
