@@ -3,7 +3,9 @@
 ?>
 
 <!-- Body -->
-    
+<?php
+    header('Location:../auth/index.php');
+    ?>
 <!-- Body ends -->
 
 <?php
