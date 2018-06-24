@@ -3,7 +3,7 @@
 
   if(!isset($_SESSION['email'])) {
     session_destroy();
-    header('Location: ../auth/');
+    header('Location: ../auth/index.php');
   }
 
   $user_email = $_SESSION['email'];
