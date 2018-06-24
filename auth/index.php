@@ -15,12 +15,11 @@
       <img class="mb-4" src="https://srmiic.com/siiclogo.jpg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
-
-      <button class="btn btn-lg btn-primary btn-block" type="submit" style="background-color:#0dba86">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <input type="email" id="inputEmail" style="width: 550px; height: 37px;" placeholder="Email address" name="email" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label><br><br>
+      <input type="password" id="inputPassword" style="width: 550px; height: 37px;" placeholder="Password" name="password" required>
+      <br><br>
+      <button class="btn btn-lg btn-primary" type="submit" style="width: 150px; height: 37px; background-color:#0dba86">Sign in</button><br><br><br>
     </form>
   </div>
 <!-- Body ends -->
